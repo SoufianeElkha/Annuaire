@@ -23,7 +23,7 @@ d’utilisateur, puis son mot de passe. Si l’utilisateur saisi un couple nom d
 tandis que si il choisit comme nom d’utilisateur “guest” et qu’il ne spécifie pas
 de mot de passe , il sera considéré comme un invité.
 
-Les administrateurs peuvent modifier les informations du système, tandis que les
+#Les administrateurs peuvent modifier les informations du système, tandis que les
 invités ne peuvent que les consulter. Une fois connecté, tout utilisateur peut :
 
 — Consulter les informations liées à un nom dans l’annuaire.
@@ -53,37 +53,37 @@ invités ne peuvent que les consulter. Une fois connecté, tout utilisateur peut
 — Supprimer l’utilisateur courant.
 
 
-Ces fonctionnalités seront accessibles via des commandes sur l’invite :
+#Ces fonctionnalités seront accessibles via des commandes sur l’invite :
 
 
-— show [name], consulter le numéro d’une personne. Par exemple : show
+    — show [name], consulter le numéro d’une personne. Par exemple : show
     Pierre Kunzli (tout ce qui suit l’espace après la commande show est
     considéré comme étant le nom).
-— show, afficher tout l’annuaire.
+    — show, afficher tout l’annuaire.
 
-— del [name] effacer une entrée de l’annuaire. Par exemple : del Pierre
+    — del [name] effacer une entrée de l’annuaire. Par exemple : del Pierre
     Kunzli. Si l’entrée n’est pas trouvée, afficher un message d’erreur.
 
-— add [name]:[number] ajouter ou éditer une entrée de l’annuaire. Par
+    — add [name]:[number] ajouter ou éditer une entrée de l’annuaire. Par
     exemple : add Pier Ku:0210001122. Si l’entrée se trouve déjà
     dans l’annuaire, afficher un message demandant confirmation.
 
-— save sauvegarde l’état de l’annuaire dans un fichier texte.
+    — save sauvegarde l’état de l’annuaire dans un fichier texte.
 
-— quit quitter le programme. Si l’utilisateur courant est un administrateur,
+    — quit quitter le programme. Si l’utilisateur courant est un administrateur,
     demander si il veut sauvegarder l’annuaire sur le disque.
 
-— useradd [username] ajouter un administrateur au système. 
+    — useradd [username] ajouter un administrateur au système. 
     Par exemple:
     useradd pk. Si l’utilisateur existe déjà, un message d’erreur est affiché.
     Sinon, le système demande un mot de passe pour l’utilisateur.
 
-— passwd change le mot de passe de l’utilisateur courant. Le système demande un nouveau     mot de passe.
+    — passwd change le mot de passe de l’utilisateur courant. Le système demande un nouveau     mot de passe.
 
-— userdel supprime l’utilisateur courant. Une demande de confirmation
+    — userdel supprime l’utilisateur courant. Une demande de confirmation
     est effectuée avant d’exécuter la commande.
 
-Exemple d’utilisation:
+#Exemple d’utilisation:
 
     ./directory
 
