@@ -26,62 +26,67 @@ de mot de passe , il sera considéré comme un invité.
 #Les administrateurs peuvent modifier les informations du système, tandis que les
 invités ne peuvent que les consulter. Une fois connecté, tout utilisateur peut :
 
-— Consulter les informations liées à un nom dans l’annuaire.
+    — Consulter les informations liées à un nom dans l’annuaire.
 
-— Afficher l’intégralité de l’annuaire.
+    — Afficher l’intégralité de l’annuaire.
 
-— Quitter le programme.
-
-
+    — Quitter le programme.
 
 
 #Et tout administrateur peut :
 
+    — Effacer une entrée de l’annuaire.
 
+    — Ajouter ou éditer une entrée de l’annuaire.
 
+    — Sauvegarder l’état de l’annuaire dans un fichier.
 
-— Effacer une entrée de l’annuaire.
+    — Ajouter un utilisateur.
 
-— Ajouter ou éditer une entrée de l’annuaire.
+    — Modifier le mot de passe de l’utilisateur courant.
 
-— Sauvegarder l’état de l’annuaire dans un fichier.
-
-— Ajouter un utilisateur.
-
-— Modifier le mot de passe de l’utilisateur courant.
-
-— Supprimer l’utilisateur courant.
+    — Supprimer l’utilisateur courant.
 
 
 #Ces fonctionnalités seront accessibles via des commandes sur l’invite :
 
 
-    — show [name], consulter le numéro d’une personne. Par exemple : show
-    Pierre Kunzli (tout ce qui suit l’espace après la commande show est
-    considéré comme étant le nom).
-    — show, afficher tout l’annuaire.
+    — show [name]
+        consulter le numéro d’une personne. Par exemple : show
+        Pierre Kunzli (tout ce qui suit l’espace après la commande show est
+        considéré comme étant le nom).
 
-    — del [name] effacer une entrée de l’annuaire. Par exemple : del Pierre
-    Kunzli. Si l’entrée n’est pas trouvée, afficher un message d’erreur.
+    — show
+        afficher tout l’annuaire.
 
-    — add [name]:[number] ajouter ou éditer une entrée de l’annuaire. Par
-    exemple : add Pier Ku:0210001122. Si l’entrée se trouve déjà
-    dans l’annuaire, afficher un message demandant confirmation.
+    — del [name] 
+        effacer une entrée de l’annuaire. Par exemple : del Pierre
+        Kunzli. Si l’entrée n’est pas trouvée, afficher un message d’erreur.
 
-    — save sauvegarde l’état de l’annuaire dans un fichier texte.
+    — add [name]:[number] 
+        ajouter ou éditer une entrée de l’annuaire. 
+        Par exemple : 
+        add Pier Ku:0210001122. Si l’entrée se trouve déjà dans l’annuaire, afficher un message demandant confirmation.
 
-    — quit quitter le programme. Si l’utilisateur courant est un administrateur,
-    demander si il veut sauvegarder l’annuaire sur le disque.
+    — save 
+        sauvegarde l’état de l’annuaire dans un fichier texte.
 
-    — useradd [username] ajouter un administrateur au système. 
-    Par exemple:
-    useradd pk. Si l’utilisateur existe déjà, un message d’erreur est affiché.
-    Sinon, le système demande un mot de passe pour l’utilisateur.
+    — quit 
+        quitter le programme. Si l’utilisateur courant est un administrateur,
+        demander si il veut sauvegarder l’annuaire sur le disque.
 
-    — passwd change le mot de passe de l’utilisateur courant. Le système demande un nouveau     mot de passe.
+    — useradd [username] 
+        ajouter un administrateur au système. 
+        Par exemple:
+        useradd pk. Si l’utilisateur existe déjà, un message d’erreur est affiché.
+        Sinon, le système demande un mot de passe pour l’utilisateur.
 
-    — userdel supprime l’utilisateur courant. Une demande de confirmation
-    est effectuée avant d’exécuter la commande.
+    — passwd 
+        change le mot de passe de l’utilisateur courant. Le système demande un nouveau     mot de passe.
+
+    — userdel 
+        supprime l’utilisateur courant. Une demande de confirmation
+        est effectuée avant d’exécuter la commande.
 
 #Exemple d’utilisation:
 
