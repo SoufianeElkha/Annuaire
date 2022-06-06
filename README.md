@@ -1,7 +1,7 @@
 Pour compilation:
 
->make
->./directory
+    make
+    ./directory
 
 Mot de passe masqué:
 Modalité Administrateur1
@@ -14,9 +14,8 @@ Modalité Guest
 
     username: guest
 
-//////////////////////////////////////////////////////////////////////////////////////////
+//Énoncé
 
-Énoncé
 
 Le but de ce travail pratique est d’implémenter un système d’annuaire avec
 contrôle d’accès. Lors du lancement du programme nommé directory, l’utilisateur verra s’afficher un invite de connexion qui lui demandera d’abord son nom
@@ -84,8 +83,9 @@ Ces fonctionnalités seront accessibles via des commandes sur l’invite :
 — userdel supprime l’utilisateur courant. Une demande de confirmation
     est effectuée avant d’exécuter la commande.
 
-Exemple d’utilisation
-    $ ./directory
+Exemple d’utilisation:
+
+    ./directory
 
     > username : admin
 
@@ -125,6 +125,5 @@ Exemple d’utilisation
 
     Would you like to save directory to disk ? [y/n] n
 
-$
 
 
