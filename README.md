@@ -53,20 +53,20 @@ invités ne peuvent que les consulter. Une fois connecté, tout utilisateur peut
 
     — show [name]
         consulter le numéro d’une personne. Par exemple : show
-        Pierre Kunzli (tout ce qui suit l’espace après la commande show est
+        Soufiane Elkha (tout ce qui suit l’espace après la commande show est
         considéré comme étant le nom).
 
     — show
         afficher tout l’annuaire.
 
     — del [name] 
-        effacer une entrée de l’annuaire. Par exemple : del Pierre
-        Kunzli. Si l’entrée n’est pas trouvée, afficher un message d’erreur.
+        effacer une entrée de l’annuaire. Par exemple : del Soufiane Elkha. 
+        Si l’entrée n’est pas trouvée, afficher un message d’erreur.
 
     — add [name]:[number] 
         ajouter ou éditer une entrée de l’annuaire. 
         Par exemple : 
-        add Pier Ku:0210001122. Si l’entrée se trouve déjà dans l’annuaire, afficher un message demandant confirmation.
+        add Soufiane Elkha:0210001122. Si l’entrée se trouve déjà dans l’annuaire, afficher un message demandant confirmation.
 
     — save 
         sauvegarde l’état de l’annuaire dans un fichier texte.
@@ -78,7 +78,7 @@ invités ne peuvent que les consulter. Une fois connecté, tout utilisateur peut
     — useradd [username] 
         ajouter un administrateur au système. 
         Par exemple:
-        useradd pk. Si l’utilisateur existe déjà, un message d’erreur est affiché.
+        useradd admin. Si l’utilisateur existe déjà, un message d’erreur est affiché.
         Sinon, le système demande un mot de passe pour l’utilisateur.
 
     — passwd 
@@ -96,37 +96,37 @@ invités ne peuvent que les consulter. Une fois connecté, tout utilisateur peut
 
     > password : pass
 
-    pk > show Pierre Kunzli
+    admin > show Soufiane Elkha
 
-    Name : Pierre Kunzli, Phone number : 0210001122
+    Name : Soufiane Elkha, Phone number : 0210001122
 
-    pk > add Paul Albuquerque:0123211212
+    admin > add Paul Albuquerque:0123211212
 
     Name : Paul Albuquerque, Phone number : 0123211212 added in directory
 
-    pk > add Pierre Kunzli:0210001121
+    admin > add Soufiane Elkha:0210001121
 
-    Pierre Kunzli already exists in directory with phone number 0210001122.
+    Soufiane Elkha already exists in directory with phone number 0210001122.
 
     Would you like to continue ? [y/n] y
 
-    Name : Pierre Kunzli, Phone number : 0210001121 added in directory
+    Name : Soufiane Elkha, Phone number : 0210001121 added in directory
 
-    pk > save
+    admin > save
 
     Directory saved to disk
 
     Unknown command
 
-    pk > useradd pa
+    admin > useradd pa
 
     Choose a password for user pa :
 
-    pk > kjhfdkjdsf
+    admin > kjhfdkjdsf
 
     Unknown command
 
-    pk > quit
+    admin > quit
 
     Would you like to save directory to disk ? [y/n] n
 

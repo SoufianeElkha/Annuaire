@@ -1,7 +1,5 @@
 /*
-    Soufiane EL KHARMOUDI
-    TP ANNUAIRE
-    08/05/2022
+    SoufianeElkha
 
 */
 
@@ -14,7 +12,7 @@
 
 #ifndef STDIN_FILENO
 #define STDIN_FILENO 0
-#endif /* STDIN_FILENO */
+#endif 
 
 
 #include "commandes.h"
