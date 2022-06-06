@@ -5,13 +5,17 @@ Pour compilation:
 
 Mot de passe masqué:
 Modalité Administrateur1
+
     username: admin
+
     password: pass
 
 Modalité Guest
+
     username: guest
 
 //////////////////////////////////////////////////////////////////////////////////////////
+
 Énoncé
 
 Le but de ce travail pratique est d’implémenter un système d’annuaire avec
@@ -30,7 +34,10 @@ invités ne peuvent que les consulter. Une fois connecté, tout utilisateur peut
 — Quitter le programme.
 
 
+
+
 Et tout administrateur peut :
+
 
 
 
@@ -51,30 +58,33 @@ Ces fonctionnalités seront accessibles via des commandes sur l’invite :
 
 
 — show [name], consulter le numéro d’une personne. Par exemple : show
-Pierre Kunzli (tout ce qui suit l’espace après la commande show est
-considéré comme étant le nom).
+    Pierre Kunzli (tout ce qui suit l’espace après la commande show est
+    considéré comme étant le nom).
 — show, afficher tout l’annuaire.
 
 — del [name] effacer une entrée de l’annuaire. Par exemple : del Pierre
-Kunzli. Si l’entrée n’est pas trouvée, afficher un message d’erreur.
+    Kunzli. Si l’entrée n’est pas trouvée, afficher un message d’erreur.
 
 — add [name]:[number] ajouter ou éditer une entrée de l’annuaire. Par
-exemple : add Pier Ku:0210001122. Si l’entrée se trouve déjà
-dans l’annuaire, afficher un message demandant confirmation.
+    exemple : add Pier Ku:0210001122. Si l’entrée se trouve déjà
+    dans l’annuaire, afficher un message demandant confirmation.
 
 — save sauvegarde l’état de l’annuaire dans un fichier texte.
 
 — quit quitter le programme. Si l’utilisateur courant est un administrateur,
-demander si il veut sauvegarder l’annuaire sur le disque.
+    demander si il veut sauvegarder l’annuaire sur le disque.
 
-— useradd [username] ajouter un administrateur au système. Par exemple
-: useradd pk. Si l’utilisateur existe déjà, un message d’erreur est affiché.
-Sinon, le système demande un mot de passe pour l’utilisateur.
+— useradd [username] ajouter un administrateur au système. 
 
-— passwd change le mot de passe de l’utilisateur courant. Le système demande un nouveau mot de passe.
+    Par exemple:
+
+        useradd pk. Si l’utilisateur existe déjà, un message d’erreur est affiché.
+        Sinon, le système demande un mot de passe pour l’utilisateur.
+
+— passwd change le mot de passe de l’utilisateur courant. Le système demande un nouveau     mot de passe.
 
 — userdel supprime l’utilisateur courant. Une demande de confirmation
-est effectuée avant d’exécuter la commande.
+    est effectuée avant d’exécuter la commande.
 
 Exemple d’utilisation
 $ ./directory
