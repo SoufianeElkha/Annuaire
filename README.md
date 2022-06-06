@@ -75,11 +75,9 @@ Ces fonctionnalités seront accessibles via des commandes sur l’invite :
     demander si il veut sauvegarder l’annuaire sur le disque.
 
 — useradd [username] ajouter un administrateur au système. 
-
     Par exemple:
-
-        useradd pk. Si l’utilisateur existe déjà, un message d’erreur est affiché.
-        Sinon, le système demande un mot de passe pour l’utilisateur.
+    useradd pk. Si l’utilisateur existe déjà, un message d’erreur est affiché.
+    Sinon, le système demande un mot de passe pour l’utilisateur.
 
 — passwd change le mot de passe de l’utilisateur courant. Le système demande un nouveau     mot de passe.
 
@@ -87,45 +85,45 @@ Ces fonctionnalités seront accessibles via des commandes sur l’invite :
     est effectuée avant d’exécuter la commande.
 
 Exemple d’utilisation
-$ ./directory
+    $ ./directory
 
-> username : pk
+    > username : admin
 
-> password :
+    > password : pass
 
-pk > show Pierre Kunzli
+    pk > show Pierre Kunzli
 
-Name : Pierre Kunzli, Phone number : 0210001122
+    Name : Pierre Kunzli, Phone number : 0210001122
 
-pk > add Paul Albuquerque:0123211212
+    pk > add Paul Albuquerque:0123211212
 
-Name : Paul Albuquerque, Phone number : 0123211212 added in directory
+    Name : Paul Albuquerque, Phone number : 0123211212 added in directory
 
-pk > add Pierre Kunzli:0210001121
+    pk > add Pierre Kunzli:0210001121
 
-Pierre Kunzli already exists in directory with phone number 0210001122.
+    Pierre Kunzli already exists in directory with phone number 0210001122.
 
-Would you like to continue ? [y/n] y
+    Would you like to continue ? [y/n] y
 
-Name : Pierre Kunzli, Phone number : 0210001121 added in directory
+    Name : Pierre Kunzli, Phone number : 0210001121 added in directory
 
-pk > save
+    pk > save
 
-Directory saved to disk
+    Directory saved to disk
 
-Unknown command
+    Unknown command
 
-pk > useradd pa
+    pk > useradd pa
 
-Choose a password for user pa :
+    Choose a password for user pa :
 
-pk > kjhfdkjdsf
+    pk > kjhfdkjdsf
 
-Unknown command
+    Unknown command
 
-pk > quit
+    pk > quit
 
-Would you like to save directory to disk ? [y/n] n
+    Would you like to save directory to disk ? [y/n] n
 
 $
 
