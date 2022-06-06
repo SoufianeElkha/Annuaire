@@ -35,7 +35,7 @@ invités ne peuvent que les consulter. Une fois connecté, tout utilisateur peut
 
 
 
-@Et tout administrateur peut :
+#Et tout administrateur peut :
 
 
 
